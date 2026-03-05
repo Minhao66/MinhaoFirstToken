@@ -33,3 +33,7 @@
 @Minhaonb66 | Web3 Builder Journey
 
 最后更新：2026 年 3 月
+### v2 更新 (最新)
+- 新增 burn 函数：只有 owner 能销毁 token
+- 测试：已销毁 100 MBT，余额从 1,000,000 → 999,900
+- 新合约地址：0xF874c7814E13beBF6904498e46F786c541Ab1D1b
