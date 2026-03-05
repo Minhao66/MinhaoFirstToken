@@ -13,4 +13,8 @@ contract MinhaoFirstToken is ERC20, Ownable {
     function mint(address to, uint256 amount) public onlyOwner {
         _mint(to, amount);
     }
+    // 新增：只有 owner 能销毁自己的 token
+function burn(uint256 amount) public onlyOwner {
+    _burn(msg.sender, amount);
+}
 }
