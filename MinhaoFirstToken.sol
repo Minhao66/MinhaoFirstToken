@@ -1,1 +1,16 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract MinhaoFirstToken is ERC20, Ownable {
+    constructor() ERC20("Minhao Builder Token", "MBT") Ownable(msg.sender) {
+        _mint(msg.sender, 1000000 * 10 ** decimals());  // 初始给自己 1,000,000 个
+    }
+
+    // 只有 owner 才能额外铸币（学习用）
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+}
