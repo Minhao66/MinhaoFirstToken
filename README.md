@@ -1,10 +1,10 @@
-# Minhao Builder Token (MBT)
+# Builder Coin (FCW)
 
 我的第一个 ERC-20 代币项目，从零基础学习 Solidity 的起点。
 
 ## 项目信息
-- **Token 名称**：Minhao Builder Token  
-- **符号**：MBT  
+- **Token 名称**：Builder Coin   
+- **符号**：FCW  
 - **精度**：18 decimals  
 - **初始供应**：1,000,000 MBT（部署时全部 mint 给 owner）  
 - **合约地址**：0xEafF5C41F61a7A28f5490e094471861054b4B127  
